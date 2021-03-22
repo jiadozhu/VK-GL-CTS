@@ -731,7 +731,7 @@ tcu::TestNode::IterateResult ShaderBallotFunctionReadTestCase::iterate()
 	const tcu::RenderTarget renderTarget = m_context.getRenderContext().getRenderTarget();
 
 	gl.clearColor(1.0f, 0.0f, 0.0f, 1.0f);
-	gl.viewport(renderTarget.getWidth() / 2 - 1, renderTarget.getHeight() / 2 - 1, 2, 2);
+	gl.viewport(renderTarget.getWidth() / 2, renderTarget.getHeight() / 2, 2, 2);
 
 	for (ShaderPipelineIter pipelineIter = m_shaderPipelines.begin(); pipelineIter != m_shaderPipelines.end();
 		 ++pipelineIter)
